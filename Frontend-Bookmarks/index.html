@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bookmark Manager</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <!-- Nav Bar / Toolbar -->
+  <nav class="toolbar">
+    <div class="theme-switch">
+      <button class="theme-btn theme-light" aria-pressed="false" title="Switch to light">☀️</button>
+      <button class="theme-btn theme-dark" aria-pressed="false" title="Switch to dark">🌙</button>
+    </div>
+    <button class="toggle-view">🗂</button>
+  </nav>
+
+  <!-- Add Bookmark Form -->
+  <section class="add-bookmark">
+    <form class="bookmark-form">
+      <input type="text" class="title" placeholder="Bookmark Title" required>
+      <input type="url" class="url" placeholder="https://example.com" required>
+      <button type="submit">Add Bookmark</button>
+      <p class="error"></p>
+    </form>
+  </section>
+
+  <!-- Bookmarks Display -->
+  <section class="bookmarks-container list-view">
+    <!-- JS will inject bookmarks here -->
+  </section>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
